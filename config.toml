@@ -1,38 +1,66 @@
-baseURL = "https://ilkerkorkut.github.io"
+theme = "cactus"
+baseURL = "https://ilkerkorkut.github.io/"
+languageCode = "en-us"
 title = "İlker Korkut"
-theme = "etch"
-languageCode = "en-US"
+enableRobotsTXT = true
+enableGitInfo = true
+hasCJKLanguage = true
+defaultContentLanguage = "en"
 enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+displayLogo = false
+copyright = " "
 
-[params]
-  description = "thoughts, stories and ideas about software development."
-  copyright = "Copyright © 2022"
-  dark = "auto"
-  highlight = true
+[outputs]
+home = [ "HTML" ]
+page = [ "HTML" ]
+section = [ "HTML", "RSS" ]
 
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name = "posts"
-    title = "posts"
-    url = "/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "about"
-    name = "about"
-    title = "about"
-    url = "/about/"
-    weight = 20
-
-[permalinks]
-  posts = "/:title/"
+[languages.en]
+languageName = "English"
+weight = 1
 
 [markup.goldmark.renderer]
-  # Allow HTML in Markdown
-  unsafe = true
+unsafe = true
 
+[markup]
   [markup.tableOfContents]
-    ordered = true
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+pageRef = "/posts"
+weight = 1
+
+[params]
+logo = false
+gravatar = "ilkerkorkut"
+mainSectionTitle = "Posts"
+description = "thoughts, stories and ideas about software development."
+displayUpdatedDate = true
+dateFormat = "January 2, 2006"
+rss = true
+showAllPostsOnHomePage = true
+tagsOverview = false
+show_updated = true
+showDate = true
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/ilkerkorkut"
+
+[[params.social]]
+  name = "linkedin"
+  link = "https://www.linkedin.com/in/ilkerkorkut"
