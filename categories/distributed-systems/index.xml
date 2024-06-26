@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Distributed Systems on İlker Korkut</title>
+    <link>http://localhost:1313/categories/distributed-systems/</link>
+    <description>Recent content in Distributed Systems on İlker Korkut</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright> </copyright>
+    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microservice Observability: All-in-One Solution with Go: Part 1</title>
+      <link>http://localhost:1313/posts/golang-all-in-one-microservice-observability/</link>
+      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/golang-all-in-one-microservice-observability/</guid>
+      <description>In this series, I will demonstrate how to build a complete observability solution for a go microservice with Prometheus, Loki, Promtail, Tempo and interacting with the Grafana dashboard.&#xA;I will use the following tools and libraries:&#xA;Go 1.22 Fiber (go-fiber) Docker (and docker-compose) While gathering logs, I also create a kafka sink to consuming logs on promtail for loki. Promtail has flexibility to gather logs from files or different data sources as well.</description>
+    </item>
+  </channel>
+</rss>
