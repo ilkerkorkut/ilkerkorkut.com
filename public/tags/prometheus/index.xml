@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prometheus on İlker Korkut</title>
-    <link>https://ilkerkorkut.com/tags/prometheus/</link>
+    <link>http://localhost:1313/tags/prometheus/</link>
     <description>Recent content in Prometheus on İlker Korkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
     <lastBuildDate>Wed, 26 Jun 2024 16:08:33 +0300</lastBuildDate>
-    <atom:link href="https://ilkerkorkut.com/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>All-in-One Solution for observability in Go Microservices using Prometheus, Loki, Promtail, Grafana and Tempo</title>
-      <link>https://ilkerkorkut.com/posts/golang-all-in-one-microservice-observability/</link>
+      <link>http://localhost:1313/posts/golang-all-in-one-microservice-observability/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://ilkerkorkut.com/posts/golang-all-in-one-microservice-observability/</guid>
+      <guid>http://localhost:1313/posts/golang-all-in-one-microservice-observability/</guid>
       <description>In this post, I will try to demonstrate how to build a complete observability solution for a go microservice with Prometheus, Loki, Promtail, Tempo and interacting with the Grafana dashboard. In API layer, I will use Fiber framework for building a simple service. If you are in a hurry, you can find the source code in this section.&#xA;Prerequisites:&#xA;Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka sink to consuming logs on promtail for loki.</description>
     </item>
   </channel>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51327142-1"></script>
 <script>
@@ -27,7 +27,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> All-in-One Solution for observability in Go Microservices using Prometheus, Loki, Promtail, Grafana and Tempo | İlker Korkut</title>
-  <link rel = 'canonical' href = 'https://ilkerkorkut.com/posts/golang-all-in-one-microservice-observability/'>
+  <link rel = 'canonical' href = 'http://localhost:1313/posts/golang-all-in-one-microservice-observability/'>
   <meta name="description" content="thoughts, stories and ideas about software development.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -37,7 +37,7 @@
 Prerequisites:
 Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka sink to consuming logs on promtail for loki." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ilkerkorkut.com/posts/golang-all-in-one-microservice-observability/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/golang-all-in-one-microservice-observability/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-06-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-06-26T16:08:33+03:00" />
 
@@ -49,7 +49,7 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
   
   
   
-  <link rel="stylesheet" href="https://ilkerkorkut.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
+  <link rel="stylesheet" href="http://localhost:1313/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
 
   
   
@@ -61,7 +61,7 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
   
 
   
-<link rel="icon" type="image/png" href="https://ilkerkorkut.com/images/favicon.ico" />
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.ico" />
 
   
   
@@ -72,7 +72,7 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
   <div class="content index py4">
 
   <header id="header">
-  <a href="https://ilkerkorkut.com/">
+  <a href="http://localhost:1313/">
   
     <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/ffe896063870988d78a9931b4bd8d718?s=100&d=identicon)"></div>
   
@@ -110,7 +110,7 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
       <ul>
         
         <li>
-          <a class="icon" href=" https://ilkerkorkut.com/posts/golang-find-pid-with-name/" aria-label="Previous">
+          <a class="icon" href=" http://localhost:1313/posts/golang-find-pid-with-name/" aria-label="Previous">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
@@ -142,47 +142,47 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&text=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&text=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&is_video=false&description=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&is_video=false&description=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&body=Check out this article: https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&name=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&description=In%20this%20post%2c%20I%20will%20try%20to%20demonstrate%20how%20to%20build%20a%20complete%20observability%20solution%20for%20a%20go%20microservice%20with%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Tempo%20and%20interacting%20with%20the%20Grafana%20dashboard.%20In%20API%20layer%2c%20I%20will%20use%20Fiber%20framework%20for%20building%20a%20simple%20service.%20If%20you%20are%20in%20a%20hurry%2c%20you%20can%20find%20the%20source%20code%20in%20this%20section.%0aPrerequisites%3a%0aGo%201.22%20Docker%20%28and%20docker-compose%29%20While%20gathering%20logs%2c%20I%20also%20create%20a%20kafka%20sink%20to%20consuming%20logs%20on%20promtail%20for%20loki." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&name=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&description=In%20this%20post%2c%20I%20will%20try%20to%20demonstrate%20how%20to%20build%20a%20complete%20observability%20solution%20for%20a%20go%20microservice%20with%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Tempo%20and%20interacting%20with%20the%20Grafana%20dashboard.%20In%20API%20layer%2c%20I%20will%20use%20Fiber%20framework%20for%20building%20a%20simple%20service.%20If%20you%20are%20in%20a%20hurry%2c%20you%20can%20find%20the%20source%20code%20in%20this%20section.%0aPrerequisites%3a%0aGo%201.22%20Docker%20%28and%20docker-compose%29%20While%20gathering%20logs%2c%20I%20also%20create%20a%20kafka%20sink%20to%20consuming%20logs%20on%20promtail%20for%20loki." aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&t=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&t=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -279,7 +279,8 @@ Go 1.22 Docker (and docker-compose) While gathering logs, I also create a kafka 
   
     
     <div class="content" itemprop="articleBody">
-      <p>In this post, I will try to demonstrate how to build a complete observability solution for a go microservice with Prometheus, Loki, Promtail, Tempo and interacting with the Grafana dashboard. In API layer, I will use Fiber framework for building a simple service. If you are in a hurry, you can find the source code in <a href="/posts/golang-all-in-one-microservice-observability/#source-code-and-how-to-run-the-application">this</a> section.</p>
+      <img src="/images/go-observability/gopher-sailor.jpeg" alt="image" style="width:auto;height:300px;">
+<p>In this post, I will try to demonstrate how to build a complete observability solution for a go microservice with Prometheus, Loki, Promtail, Tempo and interacting with the Grafana dashboard. In API layer, I will use Fiber framework for building a simple service. If you are in a hurry, you can find the source code in <a href="/posts/golang-all-in-one-microservice-observability/#source-code-and-how-to-run-the-application">this</a> section.</p>
 <p>Prerequisites:</p>
 <ul>
 <li>Go 1.22</li>
@@ -629,47 +630,47 @@ With this approach, it is able to trace databases or any external services reque
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&text=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&text=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&is_video=false&description=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&is_video=false&description=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&body=Check out this article: https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&title=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&name=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&description=In%20this%20post%2c%20I%20will%20try%20to%20demonstrate%20how%20to%20build%20a%20complete%20observability%20solution%20for%20a%20go%20microservice%20with%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Tempo%20and%20interacting%20with%20the%20Grafana%20dashboard.%20In%20API%20layer%2c%20I%20will%20use%20Fiber%20framework%20for%20building%20a%20simple%20service.%20If%20you%20are%20in%20a%20hurry%2c%20you%20can%20find%20the%20source%20code%20in%20this%20section.%0aPrerequisites%3a%0aGo%201.22%20Docker%20%28and%20docker-compose%29%20While%20gathering%20logs%2c%20I%20also%20create%20a%20kafka%20sink%20to%20consuming%20logs%20on%20promtail%20for%20loki." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&name=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo&description=In%20this%20post%2c%20I%20will%20try%20to%20demonstrate%20how%20to%20build%20a%20complete%20observability%20solution%20for%20a%20go%20microservice%20with%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Tempo%20and%20interacting%20with%20the%20Grafana%20dashboard.%20In%20API%20layer%2c%20I%20will%20use%20Fiber%20framework%20for%20building%20a%20simple%20service.%20If%20you%20are%20in%20a%20hurry%2c%20you%20can%20find%20the%20source%20code%20in%20this%20section.%0aPrerequisites%3a%0aGo%201.22%20Docker%20%28and%20docker-compose%29%20While%20gathering%20logs%2c%20I%20also%20create%20a%20kafka%20sink%20to%20consuming%20logs%20on%20promtail%20for%20loki." aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2filkerkorkut.com%2fposts%2fgolang-all-in-one-microservice-observability%2f&t=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fgolang-all-in-one-microservice-observability%2f&t=All-in-One%20Solution%20for%20observability%20in%20Go%20Microservices%20using%20Prometheus%2c%20Loki%2c%20Promtail%2c%20Grafana%20and%20Tempo" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>

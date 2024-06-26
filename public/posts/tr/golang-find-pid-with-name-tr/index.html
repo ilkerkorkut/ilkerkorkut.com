@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51327142-1"></script>
 <script>
@@ -27,7 +27,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> Linux&#39;ta Go Kullanarak Binary İsimi ile PID&#39;lerin Etkin Bir Şekilde Bulunması | İlker Korkut</title>
-  <link rel = 'canonical' href = 'https://ilkerkorkut.com/posts/tr/golang-find-pid-with-name-tr/'>
+  <link rel = 'canonical' href = 'http://localhost:1313/posts/tr/golang-find-pid-with-name-tr/'>
   <meta name="description" content="thoughts, stories and ideas about software development.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
@@ -36,7 +36,7 @@
 <meta property="og:description" content="Birçok sistem işlevi için, Go uygulaması üzerinden execute edilen process&rsquo;leri yönetmek ve bunların İşlem Kimliklerini (PIDs) bulmak önemlidir. Ancak, özellikle isimler uzunsa veya (işlem durumu) ps gibi araçları kullanırken doğru şekilde görüntelenemediğinde PID&rsquo;leri almak zor olabilmektedir.
 Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sisteminde heterojen bir process grubuyla çalışırken, process&rsquo;lerin binary isimleri kullanarak tanımlayabilmek önemlidir. Linux sistemleri, process adını belli bir genişlikteki bir process listeleme alanına sığdırmak için otomatik olarak kısaltır." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ilkerkorkut.com/posts/tr/golang-find-pid-with-name-tr/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="http://localhost:1313/posts/tr/golang-find-pid-with-name-tr/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-03-06T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-04-11T13:35:28+03:00" />
 
@@ -47,7 +47,7 @@ Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sistemind
   
   
   
-  <link rel="stylesheet" href="https://ilkerkorkut.com/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
+  <link rel="stylesheet" href="http://localhost:1313/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q=="> 
 
   
   
@@ -59,7 +59,7 @@ Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sistemind
   
 
   
-<link rel="icon" type="image/png" href="https://ilkerkorkut.com/images/favicon.ico" />
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.ico" />
 
   
   
@@ -70,7 +70,7 @@ Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sistemind
   <div class="content index py4">
 
   <header id="header">
-  <a href="https://ilkerkorkut.com/">
+  <a href="http://localhost:1313/">
   
     <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/ffe896063870988d78a9931b4bd8d718?s=100&d=identicon)"></div>
   
@@ -109,7 +109,7 @@ Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sistemind
         
         
         <li>
-          <a class="icon" href="https://ilkerkorkut.com/posts/golang-find-pid-with-name/" aria-label="Next">
+          <a class="icon" href="http://localhost:1313/posts/golang-find-pid-with-name/" aria-label="Next">
             <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
           </a>
         </li>
@@ -140,47 +140,47 @@ Sorun: Binary İsimleri Kullanarak Process&rsquo;leri Bulabilmek Linux sistemind
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&text=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&text=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&is_video=false&description=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&is_video=false&description=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&body=Check out this article: https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&name=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&description=Bir%c3%a7ok%20sistem%20i%c5%9flevi%20i%c3%a7in%2c%20Go%20uygulamas%c4%b1%20%c3%bczerinden%20execute%20edilen%20process%26rsquo%3bleri%20y%c3%b6netmek%20ve%20bunlar%c4%b1n%20%c4%b0%c5%9flem%20Kimliklerini%20%28PIDs%29%20bulmak%20%c3%b6nemlidir.%20Ancak%2c%20%c3%b6zellikle%20isimler%20uzunsa%20veya%20%28i%c5%9flem%20durumu%29%20ps%20gibi%20ara%c3%a7lar%c4%b1%20kullan%c4%b1rken%20do%c4%9fru%20%c5%9fekilde%20g%c3%b6r%c3%bcntelenemedi%c4%9finde%20PID%26rsquo%3bleri%20almak%20zor%20olabilmektedir.%0aSorun%3a%20Binary%20%c4%b0simleri%20Kullanarak%20Process%26rsquo%3bleri%20Bulabilmek%20Linux%20sisteminde%20heterojen%20bir%20process%20grubuyla%20%c3%a7al%c4%b1%c5%9f%c4%b1rken%2c%20process%26rsquo%3blerin%20binary%20isimleri%20kullanarak%20tan%c4%b1mlayabilmek%20%c3%b6nemlidir.%20Linux%20sistemleri%2c%20process%20ad%c4%b1n%c4%b1%20belli%20bir%20geni%c5%9flikteki%20bir%20process%20listeleme%20alan%c4%b1na%20s%c4%b1%c4%9fd%c4%b1rmak%20i%c3%a7in%20otomatik%20olarak%20k%c4%b1salt%c4%b1r." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&name=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&description=Bir%c3%a7ok%20sistem%20i%c5%9flevi%20i%c3%a7in%2c%20Go%20uygulamas%c4%b1%20%c3%bczerinden%20execute%20edilen%20process%26rsquo%3bleri%20y%c3%b6netmek%20ve%20bunlar%c4%b1n%20%c4%b0%c5%9flem%20Kimliklerini%20%28PIDs%29%20bulmak%20%c3%b6nemlidir.%20Ancak%2c%20%c3%b6zellikle%20isimler%20uzunsa%20veya%20%28i%c5%9flem%20durumu%29%20ps%20gibi%20ara%c3%a7lar%c4%b1%20kullan%c4%b1rken%20do%c4%9fru%20%c5%9fekilde%20g%c3%b6r%c3%bcntelenemedi%c4%9finde%20PID%26rsquo%3bleri%20almak%20zor%20olabilmektedir.%0aSorun%3a%20Binary%20%c4%b0simleri%20Kullanarak%20Process%26rsquo%3bleri%20Bulabilmek%20Linux%20sisteminde%20heterojen%20bir%20process%20grubuyla%20%c3%a7al%c4%b1%c5%9f%c4%b1rken%2c%20process%26rsquo%3blerin%20binary%20isimleri%20kullanarak%20tan%c4%b1mlayabilmek%20%c3%b6nemlidir.%20Linux%20sistemleri%2c%20process%20ad%c4%b1n%c4%b1%20belli%20bir%20geni%c5%9flikteki%20bir%20process%20listeleme%20alan%c4%b1na%20s%c4%b1%c4%9fd%c4%b1rmak%20i%c3%a7in%20otomatik%20olarak%20k%c4%b1salt%c4%b1r." aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&t=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&t=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -365,47 +365,47 @@ Birçok sistem yardımcı programı, <code>ps</code>, <code>top</code> ve <code>
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&text=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&text=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&is_video=false&description=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&is_video=false&description=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&body=Check out this article: https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&body=Check out this article: http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&title=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&name=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&description=Bir%c3%a7ok%20sistem%20i%c5%9flevi%20i%c3%a7in%2c%20Go%20uygulamas%c4%b1%20%c3%bczerinden%20execute%20edilen%20process%26rsquo%3bleri%20y%c3%b6netmek%20ve%20bunlar%c4%b1n%20%c4%b0%c5%9flem%20Kimliklerini%20%28PIDs%29%20bulmak%20%c3%b6nemlidir.%20Ancak%2c%20%c3%b6zellikle%20isimler%20uzunsa%20veya%20%28i%c5%9flem%20durumu%29%20ps%20gibi%20ara%c3%a7lar%c4%b1%20kullan%c4%b1rken%20do%c4%9fru%20%c5%9fekilde%20g%c3%b6r%c3%bcntelenemedi%c4%9finde%20PID%26rsquo%3bleri%20almak%20zor%20olabilmektedir.%0aSorun%3a%20Binary%20%c4%b0simleri%20Kullanarak%20Process%26rsquo%3bleri%20Bulabilmek%20Linux%20sisteminde%20heterojen%20bir%20process%20grubuyla%20%c3%a7al%c4%b1%c5%9f%c4%b1rken%2c%20process%26rsquo%3blerin%20binary%20isimleri%20kullanarak%20tan%c4%b1mlayabilmek%20%c3%b6nemlidir.%20Linux%20sistemleri%2c%20process%20ad%c4%b1n%c4%b1%20belli%20bir%20geni%c5%9flikteki%20bir%20process%20listeleme%20alan%c4%b1na%20s%c4%b1%c4%9fd%c4%b1rmak%20i%c3%a7in%20otomatik%20olarak%20k%c4%b1salt%c4%b1r." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&name=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1&description=Bir%c3%a7ok%20sistem%20i%c5%9flevi%20i%c3%a7in%2c%20Go%20uygulamas%c4%b1%20%c3%bczerinden%20execute%20edilen%20process%26rsquo%3bleri%20y%c3%b6netmek%20ve%20bunlar%c4%b1n%20%c4%b0%c5%9flem%20Kimliklerini%20%28PIDs%29%20bulmak%20%c3%b6nemlidir.%20Ancak%2c%20%c3%b6zellikle%20isimler%20uzunsa%20veya%20%28i%c5%9flem%20durumu%29%20ps%20gibi%20ara%c3%a7lar%c4%b1%20kullan%c4%b1rken%20do%c4%9fru%20%c5%9fekilde%20g%c3%b6r%c3%bcntelenemedi%c4%9finde%20PID%26rsquo%3bleri%20almak%20zor%20olabilmektedir.%0aSorun%3a%20Binary%20%c4%b0simleri%20Kullanarak%20Process%26rsquo%3bleri%20Bulabilmek%20Linux%20sisteminde%20heterojen%20bir%20process%20grubuyla%20%c3%a7al%c4%b1%c5%9f%c4%b1rken%2c%20process%26rsquo%3blerin%20binary%20isimleri%20kullanarak%20tan%c4%b1mlayabilmek%20%c3%b6nemlidir.%20Linux%20sistemleri%2c%20process%20ad%c4%b1n%c4%b1%20belli%20bir%20geni%c5%9flikteki%20bir%20process%20listeleme%20alan%c4%b1na%20s%c4%b1%c4%9fd%c4%b1rmak%20i%c3%a7in%20otomatik%20olarak%20k%c4%b1salt%c4%b1r." aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2filkerkorkut.com%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&t=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%3a%2f%2flocalhost%3a1313%2fposts%2ftr%2fgolang-find-pid-with-name-tr%2f&t=Linux%27ta%20Go%20Kullanarak%20Binary%20%c4%b0simi%20ile%20PID%27lerin%20Etkin%20Bir%20%c5%9eekilde%20Bulunmas%c4%b1" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
