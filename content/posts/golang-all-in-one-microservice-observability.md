@@ -28,7 +28,7 @@ keywords:
 ---
 
 
-<img src="/images/go-observability/gopher-sailor.jpeg" alt="image" style="width:auto;height:300px;">
+<img src="/images/go-observability/gopher-sailor.jpeg" alt="Go Microservice Observability" style="width:auto;height:300px;">
 
 In this post, I will try to demonstrate how to build a complete observability solution for a go microservice with Prometheus, Loki, Promtail, Tempo and interacting with the Grafana dashboard. In API layer, I will use Fiber framework for building a simple service. If you are in a hurry, you can find the source code in [this](#source-code-and-how-to-run-the-application) section.
 
