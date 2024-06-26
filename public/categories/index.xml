@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on İlker Korkut</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://ilkerkorkut.com/categories/</link>
     <description>Recent content in Categories on İlker Korkut</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Tue, 25 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 16:08:33 +0300</lastBuildDate>
+    <atom:link href="https://ilkerkorkut.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distributed Tracing</title>
-      <link>http://localhost:1313/categories/distributed-tracing/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/distributed-tracing/</guid>
+      <link>https://ilkerkorkut.com/categories/distributed-tracing/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://ilkerkorkut.com/categories/distributed-tracing/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>http://localhost:1313/categories/go/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/go/</guid>
+      <link>https://ilkerkorkut.com/categories/go/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://ilkerkorkut.com/categories/go/</guid>
       <description></description>
     </item>
     <item>
       <title>Microservices</title>
-      <link>http://localhost:1313/categories/microservices/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/microservices/</guid>
+      <link>https://ilkerkorkut.com/categories/microservices/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://ilkerkorkut.com/categories/microservices/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:1313/categories/monitoring/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/monitoring/</guid>
+      <link>https://ilkerkorkut.com/categories/monitoring/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://ilkerkorkut.com/categories/monitoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Observability</title>
-      <link>http://localhost:1313/categories/observability/</link>
-      <pubDate>Tue, 25 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/observability/</guid>
+      <link>https://ilkerkorkut.com/categories/observability/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://ilkerkorkut.com/categories/observability/</guid>
       <description></description>
     </item>
   </channel>
