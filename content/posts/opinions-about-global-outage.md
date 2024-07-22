@@ -1,7 +1,7 @@
 ---
 title: "A candid subjective consideration about Global Outage"
 author: ilker
-date: 2024-06-26
+date: 2024-07-22
 tags:
   - microsoft
   - crowdstrike
